@@ -1,0 +1,166 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 500px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#imgcontainer{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 100%;
+    height: 50%;
+}
+
+.catelogy-section{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* margin: 10px; */
+    
+}
+
+input[type="button"] {
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.category-titles {
+    display: flex;
+    gap: 50px;
+}
+
+.category-item {
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-item.active {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.view-all a {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.product-list{
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    scroll-snap-type: x mandatory; /* Thêm hiệu ứng cuộn snap */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-list::-webkit-scrollbar {
+    height: 15px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.product-cart{
+    min-width: 420px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(213, 213, 213);
+    transition: all 0.rgb(200, 199, 199)
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.rating{
+    font-size: 20px;
+    color: darkorange;
+}
+
+.product-price{
+    font-size: 25px;
+    color: black;
+}
+
+.discount-price{
+    font-size: 25px;
+    color: red;
+}
+
+.original-price{
+    font-size: 20px;
+    color: grey;
+    text-decoration: line-through;
+}
